@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.test.hibernate60</groupId>
+	<artifactId>Hibernate-6.0.0.Beta3-Jakarta-Persistence-3.0.0-Java-17-Example</artifactId>
+	<packaging>jar</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	
+	<name>Hibernate-6.0.0.Beta3-Jakarta-Persistence-3.0.0-Java-17-Example</name>
+	<url>https://github.com/rahamath18/Hibernate-6.0.0.Beta3-Jakarta-Persistence-3.0.0-Java-17-Example</url>
+	<description>Hibernate-6.0.0.Beta3, Jakarta-Persistence-3.0.0, and Java-17-Example</description>
+
+	<organization>
+		<name>Personal</name>
+		<url>https://rahamaths.appspot.com/</url>
+	</organization>
+	
+	<developers>
+		<developer>
+			<id>rahamath18</id>
+			<name>Rahamath S</name>
+			<email>rahamath18@yahoo.com</email>
+			<organization>Personal</organization>
+			<roles>
+				<role>Project Lead</role>
+			</roles>
+			<timezone>GMT +5.30</timezone>
+		</developer>
+	</developers>
+	
+	<licenses>
+		<license>
+			<name>Community Project General License</name>
+			<url>https://rahamaths.appspot.com/</url>
+			<comments>
+				Copyright © 2003-2019 rahamaths.appspot.com. All rights reserved.
+				
+				As this is a Community Project General License, 
+				you may use the project or part of the project for your own explore and learnings.
+			</comments>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.12</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.oracle.ojdbc/ojdbc8 -->
+		<dependency>
+		    <groupId>com.oracle.ojdbc</groupId>
+		    <artifactId>ojdbc8</artifactId>
+		    <version>19.3.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.27</version>
+		</dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+		<!-- This with Compile Dependencies jakarta.persistence-api 3.0.0 -->
+		<dependency>
+		    <groupId>org.hibernate.orm</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>6.0.0.Beta3</version>
+		</dependency>
+				
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<release>17</release>
+					<source>17</source>
+					<target>17</target>
+					<fork>true</fork>
+					<executable>D:\java\openjdk\jdk-17.0.1\bin\javac</executable> <!--PATH TO JAVAC -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
